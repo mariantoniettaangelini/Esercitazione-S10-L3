@@ -1,0 +1,20 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Brand</th>
+      <th scope="col">Prezzo</th>
+      <th scope="col">Descrizione</th>
+      <th scope="col">Categoria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let prodotto of prodotti">
+      <th scope="row"><button class="btn btn-danger">Fav</button></th>
+      <td>{{prodotto.brand}}</td>
+      <td>{{prodotto.price}}€</td>
+      <td>{{prodotto.description}}</td>
+      <td>{{prodotto.category}}</td>
+    </tr>
+  </tbody>
+</table>
